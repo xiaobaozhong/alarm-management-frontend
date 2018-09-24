@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <keyPointer></keyPointer>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,12 +85,16 @@
 </template>
 
 <script>
+import keyPointer from '@/components/basic/keyPointer.vue'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+    keyPointer
   }
 }
 </script>

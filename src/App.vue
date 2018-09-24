@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Header/>
+    <div class='body' style="background: ${require('~/pane-bottom.png')}">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
+import Header from '@/components/basic/Header.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+  }
 }
 </script>
 
